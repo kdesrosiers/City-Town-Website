@@ -45,12 +45,9 @@ session_start();
 	<form action="login.php" method="POST">
 		<fieldset>
 			<legend>LOGIN</legend>
-			Username: <input type="text" name="username" placeholder="Enter username.."> <br><br>
+			Username: <input type="text" name="username" placeholder="Enter username.." required> <br><br>
 
-    		Password: <input type="password" name="password" placeholder="Enter password.."> <br><br>
-
-    		<input id="remember" type="checkbox">Remember me
-    		<br><br>
+    		Password: <input type="password" name="password" placeholder="Enter password.." required> <br><br>
 
     		<input type="submit" value="Submit">
 			<button type="reset" value="Reset">Reset</button> 
@@ -59,6 +56,5 @@ session_start();
 		</fieldset>
 	</form>
 </div>
-
 </body>
 </html>

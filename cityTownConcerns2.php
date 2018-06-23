@@ -116,7 +116,7 @@ document.getElementById("time").innerHTML = d.toDateString();
 
 <div>
 	<center><p><b>Concerns/Feedback</b></p><center>
-		<form action="submitConcern.php" method="POST">
+		<form name="myForm" action="submitConcern.php" onsubmit="return alertMsg()" method="POST">
 			Type of feedback: <select name="feedback">
 				<option value="----">----</option>
 				<option value="Questions">Questions</option>
@@ -135,17 +135,34 @@ document.getElementById("time").innerHTML = d.toDateString();
 				<textarea placeholder="Explain..." id="explain" name="explain" maxlength="1000" rows="10" cols="50" onkeyup="countChar(this)"></textarea>
 			</p>
 			<span id="chars">1000</span> characters remaining <p>
-			<input type="submit" onclick="alertMsg()" />
+			<input type="submit" value="Submit"/>
 		</form>
 	</center>
 </div>
 
 <script>
 	function alertMsg() {
-		alert("Thank you for your submission");
+		var feedback = document.forms["myForm"]["feedback"].value;
+		var department = document.forms["myForm"]["department"].value;
+		var x = document.forms["myForm"]["explain"].value;
+		if (x == "") {
+			alert("All fields must be filled out");
+			return false;
+		}
+		if(feedback == "----") {
+			alert("All fields must be filled out");
+			return false;
+		}
+		if(department == "----") {
+			alert("All fields must be filled out");
+			return false;
+		}
+		else{
+			alert("Thank you for your submission");
+		}	
+		
 	}
 </script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
 var maxLength = 1000;

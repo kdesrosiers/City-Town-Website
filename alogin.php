@@ -99,7 +99,6 @@ h1{
 <ul>
 
   	<li><a class="active" href="alogin.php"><i class="fa fa-home"></i> HOME</a></li>
-	<li><a href="deleteUser.php"><i class="fa fa-question"></i>  DELETE USER</a></li>
 	<li><a href="updatePW.php"><i class="fa fa-cog"></i>  UPDATE PASSWORD</a></li>
 </ul>
 
@@ -181,7 +180,7 @@ document.getElementById("time").innerHTML = d.toDateString();
 
 
 
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<div class="w3-content w3-margin-bottom" style="max-width:1400px;">
 <div class="w3-row-padding">
   
 <div class="w3-twothird" style="margin-left:215px">
@@ -200,7 +199,7 @@ document.getElementById("time").innerHTML = d.toDateString();
 
 		?>
 
-<div class="container" style="margin-top:125px">
+<div class="container" style="margin-top:100px">
 	<div class="form-group pull-right">
 		<input type="text" id="formSearch" name="formSearch" class="search form-control" placeholder="Search here..."/>
 	</div>

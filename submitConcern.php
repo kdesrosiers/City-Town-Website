@@ -13,6 +13,7 @@ $now = date("D d M Y g:i:s");
 
 if($feedback == "----" || $department == "----" || empty($explain))
 {
+	header('Location: cityTownConcerns.php');
 	echo "Please fill out all fields";
 }
 
@@ -23,7 +24,7 @@ else
 		if($conn->query($concern))
 		{
 			//echo "Thank you for your submission ".$_SESSION['username']."";
-			//header('Location: FrontendHome.php');
+			header('Location: FrontendHome.php');
 			echo "Thank you for your submission $user.";
 					
 		}
