@@ -132,7 +132,6 @@ h1{
 
 <ul>
   	<li><a class="active" href="alogin.php"><i class="fa fa-home"></i> HOME</a></li>
-	<li><a href="deleteUser.php"><i class="fa fa-question"></i>  DELETE USER</a></li>
 	<li><a href="updatePW.php"><i class="fa fa-cog"></i>  UPDATE PASSWORD</a></li>
 </ul>
 
