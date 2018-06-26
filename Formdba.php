@@ -5,7 +5,6 @@
 		if (isset($_SESSION['username']))
 		{
 			$currUserID = $_SESSION['username'];
-			//$formid = $_SESSION['formid'];
 		}
 		else
 		{
